@@ -412,7 +412,7 @@ footer a:hover { color: var(--accent); }
         <div class="metric-lbl">Years Exp.</div>
       </div>
       <div>
-        <div class="metric-val">26<sup>+</sup></div>
+        <div class="metric-val">27<sup>+</sup></div>
         <div class="metric-lbl">Apps Shipped</div>
       </div>
       <div>
@@ -570,12 +570,12 @@ footer a:hover { color: var(--accent); }
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-  <div class="reveal">
+  <div>
     <div class="section-eyebrow">Projects</div>
     <h2 class="section-title">Selected work</h2>
-    <p class="section-desc" style="margin-bottom:0;">26+ production apps. Primarily built with <strong style="color:var(--text)">Flutter</strong> &amp; <strong style="color:var(--text)">Native Android (Kotlin)</strong> — spanning fintech, government, insurance, automotive, and international clients.</p>
+    <p class="section-desc" style="margin-bottom:0;">27+ production apps. Primarily built with <strong style="color:var(--text)">Flutter</strong> &amp; <strong style="color:var(--text)">Native Android (Kotlin/Java)</strong> — spanning fintech, government, insurance, HR, automotive, and international clients.</p>
   </div>
-  <div class="projects-grid reveal">
+  <div class="projects-grid" style="margin-top:3rem;">
     <div class="proj-card large">
       <div class="proj-index">01</div>
       <span class="proj-industry ind-gov">Government</span>
@@ -676,9 +676,9 @@ footer a:hover { color: var(--accent); }
     </div>
     <div class="proj-card">
       <div class="proj-index">13</div>
-      <span class="proj-industry ind-fin">Fintech</span>
+      <span class="proj-industry ind-fin">Fintech · Ongoing</span>
       <div class="proj-name">Core Banking App</div>
-      <div class="proj-platform">Android · Ongoing</div>
+      <div class="proj-platform">Android</div>
       <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
@@ -690,6 +690,13 @@ footer a:hover { color: var(--accent); }
       <div class="proj-links">
         <a class="proj-link" href="#" target="_blank">App Store ↗</a>
       </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">15</div>
+      <span class="proj-industry ind-ecom">HR &amp; Enterprise</span>
+      <div class="proj-name">HRMS — HR Management System</div>
+      <div class="proj-platform">Android · Flutter</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">24</div>
@@ -795,4 +802,18 @@ footer a:hover { color: var(--accent); }
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const nav = document.getElementById('navbar');
-  window
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('sticky', window.scrollY > 20);
+  });
+  // Reveal on scroll with fallback
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.01, rootMargin: '0px 0px -30px 0px' });
+  revealEls.forEach(el => observer.observe(el));
+  setTimeout(() => { revealEls.forEach(el => el.classList.add('visible')); }, 800);
+</script>
+</body>
+</html>
