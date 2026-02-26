@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rokibul Hasan — Senior Mobile App Developer</title>
-<meta name="description" content="Senior Mobile App Developer with 8+ years of experience building native iOS & Android applications. Based in Dhaka, Bangladesh.">
+<meta name="description" content="Senior Mobile App Developer with 8+ years delivering Flutter and native Android & iOS applications for fintech, government, and enterprise clients. Based in Dhaka, Bangladesh.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -285,6 +285,11 @@ nav.sticky {
 }
 .proj-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.35rem; line-height: 1.3; }
 .proj-platform { font-size: 0.8rem; color: var(--text-3); }
+.proj-tech-row { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.6rem; }
+.ptag { padding: 2px 8px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; font-weight: 500; letter-spacing: 0.04em; }
+.ptag-flutter { background: rgba(84,197,248,0.12); color: #54c5f8; border: 1px solid rgba(84,197,248,0.25); }
+.ptag-android { background: rgba(72,187,120,0.12); color: #68d391; border: 1px solid rgba(72,187,120,0.25); }
+.ptag-ios     { background: rgba(160,174,192,0.1);  color: #a0aec0; border: 1px solid rgba(160,174,192,0.2); }
 .proj-links { display: flex; gap: 0.5rem; margin-top: auto; padding-top: 1.25rem; }
 .proj-link {
   display: inline-flex; align-items: center; gap: 5px;
@@ -300,6 +305,7 @@ nav.sticky {
 .ind-ins  { background: rgba(252,129,74,0.1);  color: #fc814a; border: 1px solid rgba(252,129,74,0.2); }
 .ind-tel  { background: rgba(245,101,101,0.1); color: #fc8181; border: 1px solid rgba(245,101,101,0.2); }
 .ind-iot  { background: rgba(246,173,85,0.1);  color: #f6ad55; border: 1px solid rgba(246,173,85,0.2); }
+.ind-intl { background: rgba(129,230,217,0.1); color: #81e6d9; border: 1px solid rgba(129,230,217,0.2); }
 
 /* EDUCATION */
 #education { }
@@ -398,7 +404,7 @@ footer a:hover { color: var(--accent); }
       <span class="accent-word">App</span> <span class="outline-word">Developer</span>
     </h1>
     <p class="hero-sub">
-      8+ years delivering high-impact native iOS &amp; Android applications for fintech, government, insurance, and enterprise clients across Bangladesh and beyond.
+      8+ years delivering high-impact <strong style="color:var(--text)">Flutter</strong> and <strong style="color:var(--text)">native Android &amp; iOS</strong> applications for fintech, government, insurance, and enterprise clients across Bangladesh and beyond.
     </p>
     <div class="hero-metrics">
       <div>
@@ -406,11 +412,11 @@ footer a:hover { color: var(--accent); }
         <div class="metric-lbl">Years Exp.</div>
       </div>
       <div>
-        <div class="metric-val">23<sup>+</sup></div>
+        <div class="metric-val">26<sup>+</sup></div>
         <div class="metric-lbl">Apps Shipped</div>
       </div>
       <div>
-        <div class="metric-val">10<sup>+</sup></div>
+        <div class="metric-val">12<sup>+</sup></div>
         <div class="metric-lbl">Clients Served</div>
       </div>
     </div>
@@ -425,46 +431,47 @@ footer a:hover { color: var(--accent); }
       <div class="hero-card-label">Core Expertise</div>
       <ul class="expertise-list">
         <li>
+          <div class="exp-icon" style="background:rgba(84,197,248,0.12);">🐦</div>
+          <div>
+            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">Flutter Development</div>
+            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Dart · GetX · BLoC · Riverpod</div>
+          </div>
+          <div class="exp-meta">PRIMARY</div>
+        </li>
+        <li>
+          <div class="exp-icon" style="background:rgba(72,187,120,0.12);">🤖</div>
+          <div>
+            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">Native Android</div>
+            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Kotlin · Java · Jetpack · MVVM</div>
+          </div>
+          <div class="exp-meta">PRIMARY</div>
+        </li>
+        <li>
           <div class="exp-icon" style="background:rgba(99,179,237,0.1);">🍎</div>
           <div>
-            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">iOS Development</div>
-            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Swift · SwiftUI · UIKit · Core Data</div>
+            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">Native iOS</div>
+            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Swift · UIKit · SwiftUI · Core Data</div>
           </div>
-          <div class="exp-meta">8 YRS</div>
-        </li>
-        <li>
-          <div class="exp-icon" style="background:rgba(72,187,120,0.1);">🤖</div>
-          <div>
-            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">Android Development</div>
-            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Kotlin · Java · MVVM · Material Design</div>
-          </div>
-          <div class="exp-meta">8 YRS</div>
-        </li>
-        <li>
-          <div class="exp-icon" style="background:rgba(99,179,237,0.08);">🎯</div>
-          <div>
-            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">Cross-Platform</div>
-            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Flutter · Dart</div>
-          </div>
-          <div class="exp-meta">4 YRS</div>
+          <div class="exp-meta">1 PROJECT</div>
         </li>
         <li>
           <div class="exp-icon" style="background:rgba(212,168,83,0.08);">🏗️</div>
           <div>
             <div style="font-weight:600;color:var(--text);font-size:0.9rem;">App Architecture</div>
-            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">MVVM · Clean Architecture · SOLID</div>
+            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">MVVM · Clean Arch · SOLID</div>
           </div>
           <div class="exp-meta">6 YRS</div>
         </li>
       </ul>
       <div class="tech-row">
-        <span class="tech-pill">Swift</span>
-        <span class="tech-pill">Kotlin</span>
         <span class="tech-pill">Flutter</span>
-        <span class="tech-pill">MVVM</span>
-        <span class="tech-pill">MQTT</span>
-        <span class="tech-pill">eKYC</span>
-        <span class="tech-pill">SwiftUI</span>
+        <span class="tech-pill">Dart</span>
+        <span class="tech-pill">GetX</span>
+        <span class="tech-pill">BLoC</span>
+        <span class="tech-pill">Riverpod</span>
+        <span class="tech-pill">Kotlin</span>
+        <span class="tech-pill">Java</span>
+        <span class="tech-pill">Swift</span>
       </div>
     </div>
   </div>
@@ -475,42 +482,43 @@ footer a:hover { color: var(--accent); }
 <!-- ABOUT -->
 <section id="about" class="section">
   <div class="section-eyebrow">About</div>
-  <h2 class="section-title">Building apps that matter</h2>
+  <h2 class="section-title">Flutter &amp; Android first,<br>always mobile-native</h2>
   <div class="about-grid reveal">
     <div class="about-body">
-      <p>I'm a <strong>Senior Mobile App Developer</strong> based in Dhaka, Bangladesh, with over <strong>8 years of professional experience</strong> designing and delivering production-grade mobile applications. I currently serve as a Software Engineer at Sheba Technologies Limited, where I lead mobile development across multiple high-stakes projects.</p>
-      <p>My expertise spans the full mobile development lifecycle — from architecture design and UI/UX implementation to deployment, hardware integrations (Bluetooth printers, fingerprint scanners), and complex feature sets including eKYC, MQTT-powered IoT, and Core Banking flows.</p>
-      <p>Whether leading a team or working independently, I bring <strong>clean code practices, engineering discipline,</strong> and a strong eye for user experience. I'm also pursuing an M.Sc. in Computer Science at Stamford University Bangladesh (thesis in progress).</p>
+      <p>I'm a <strong>Senior Mobile App Developer</strong> based in Dhaka, Bangladesh, specialising in <strong>Flutter</strong> and <strong>Native Android</strong> with over <strong>8 years of professional experience</strong>. I currently lead mobile engineering at Sheba Technologies Limited across multiple high-stakes projects.</p>
+      <p>For Flutter, I'm proficient with all three major state management solutions — <strong>GetX, BLoC,</strong> and <strong>Riverpod</strong> — and choose the right one based on project scale and team needs. On the Android side, I work natively in both <strong>Kotlin and Java</strong>. I've also delivered one <strong>native iOS project</strong> using Swift, UIKit, and SwiftUI.</p>
+      <p>Beyond standard app work, I've built eKYC flows, MQTT IoT apps, Core Banking modules, and hardware integrations — for clients in Bangladesh, South Africa, and Canada.</p>
     </div>
     <div class="skills-panel">
       <div class="skill-cat">
-        <div class="skill-cat-title">Languages</div>
+        <div class="skill-cat-title">🐦 Flutter</div>
         <div class="skill-chips">
-          <span class="chip hi">Swift</span><span class="chip hi">Kotlin</span>
-          <span class="chip hi">Dart</span><span class="chip">Java</span>
-          <span class="chip">HTML</span><span class="chip">CSS</span>
+          <span class="chip hi">Flutter</span><span class="chip hi">Dart</span>
+          <span class="chip hi">GetX</span><span class="chip hi">BLoC</span>
+          <span class="chip hi">Riverpod</span><span class="chip">Clean Arch</span>
         </div>
       </div>
       <div class="skill-cat">
-        <div class="skill-cat-title">iOS Ecosystem</div>
+        <div class="skill-cat-title">🤖 Native Android</div>
         <div class="skill-chips">
-          <span class="chip hi">SwiftUI</span><span class="chip hi">UIKit</span>
-          <span class="chip">Core Data</span><span class="chip">Combine</span>
+          <span class="chip hi">Kotlin</span><span class="chip hi">Java</span>
+          <span class="chip hi">Jetpack</span><span class="chip hi">MVVM</span>
+          <span class="chip">Material Design</span><span class="chip">Room DB</span>
         </div>
       </div>
       <div class="skill-cat">
-        <div class="skill-cat-title">Architecture</div>
+        <div class="skill-cat-title">🍎 Native iOS <span style="font-size:0.6rem;opacity:0.5;font-weight:400;">(1 project)</span></div>
         <div class="skill-chips">
-          <span class="chip hi">MVVM</span><span class="chip">Clean Architecture</span>
-          <span class="chip">Repository Pattern</span><span class="chip">SOLID</span>
+          <span class="chip">Swift</span><span class="chip">UIKit</span>
+          <span class="chip">SwiftUI</span><span class="chip">Core Data</span>
         </div>
       </div>
       <div class="skill-cat">
-        <div class="skill-cat-title">Specialisations</div>
+        <div class="skill-cat-title">⚙️ Architecture &amp; Integrations</div>
         <div class="skill-chips">
-          <span class="chip">MQTT / IoT</span><span class="chip">eKYC</span>
+          <span class="chip hi">MVVM</span><span class="chip">SOLID</span>
+          <span class="chip">MQTT</span><span class="chip">eKYC</span>
           <span class="chip">BT Printer</span><span class="chip">Fingerprint</span>
-          <span class="chip">Material Design</span>
         </div>
       </div>
     </div>
@@ -529,31 +537,31 @@ footer a:hover { color: var(--accent); }
       <div class="exp-date">Nov 2021 — Present <span class="exp-current">Current</span></div>
       <div class="exp-role">Software Engineer</div>
       <div class="exp-company">Sheba Technologies Limited</div>
-      <p class="exp-desc">Leading end-to-end mobile development for government, fintech, and enterprise clients. Responsible for iOS and Android architecture, code reviews, and mentoring across multiple concurrent projects.</p>
+      <p class="exp-desc">Leading Flutter and Native Android development for government, fintech, and enterprise clients. Architecting apps with Clean Architecture &amp; MVVM, conducting code reviews, and mentoring developers across multiple concurrent projects.</p>
     </div>
     <div class="exp-card">
       <div class="exp-date">Oct 2018 — May 2021</div>
       <div class="exp-role">Junior Software Developer</div>
       <div class="exp-company">Sheba Technologies Limited</div>
-      <p class="exp-desc">Built and maintained native iOS and Android applications, including vTracker, Relief Management systems, and the Sheba App Store platform.</p>
+      <p class="exp-desc">Built and maintained Native Android and Flutter applications including vTracker, Relief Management systems, and the Sheba App Store platform using Kotlin and Dart.</p>
     </div>
     <div class="exp-card">
       <div class="exp-date">Jul 2021 — Nov 2021</div>
       <div class="exp-role">Software Developer</div>
       <div class="exp-company">SQ Group</div>
-      <p class="exp-desc">Delivered Android application features within a short-term engagement, focusing on cross-team collaboration and feature delivery.</p>
+      <p class="exp-desc">Delivered Native Android application features using Kotlin, focusing on UI implementation, performance optimisation, and cross-team collaboration.</p>
     </div>
     <div class="exp-card">
       <div class="exp-date">Apr 2021 — Jul 2021</div>
       <div class="exp-role">Mobile App Developer (Contract)</div>
       <div class="exp-company">Sookh.com</div>
-      <p class="exp-desc">Contract developer for the SOOKH customer e-commerce app on Google Play Store. Handled feature development and performance improvements.</p>
+      <p class="exp-desc">Contract Flutter/Android developer for the SOOKH e-commerce app on Google Play Store. Delivered features and performance improvements.</p>
     </div>
     <div class="exp-card">
       <div class="exp-date">Jun 2018 — Sep 2018</div>
       <div class="exp-role">Mobile Development Intern</div>
       <div class="exp-company">Sheba Technology Limited</div>
-      <p class="exp-desc">Kickstarted professional career with hands-on mobile development, establishing the foundation for over 8 years of continued growth.</p>
+      <p class="exp-desc">Began professional career with hands-on Native Android development using Java, establishing the foundation for 8+ years of mobile engineering growth.</p>
     </div>
   </div>
 </section>
@@ -565,20 +573,22 @@ footer a:hover { color: var(--accent); }
   <div class="reveal">
     <div class="section-eyebrow">Projects</div>
     <h2 class="section-title">Selected work</h2>
-    <p class="section-desc" style="margin-bottom:0;">23+ production apps spanning fintech, government, insurance, automotive, and IoT verticals.</p>
+    <p class="section-desc" style="margin-bottom:0;">26+ production apps. Primarily built with <strong style="color:var(--text)">Flutter</strong> &amp; <strong style="color:var(--text)">Native Android (Kotlin)</strong> — spanning fintech, government, insurance, automotive, and international clients.</p>
   </div>
   <div class="projects-grid reveal">
     <div class="proj-card large">
       <div class="proj-index">01</div>
       <span class="proj-industry ind-gov">Government</span>
       <div class="proj-name">Sheikh Russel Digital Lab (SRDL)</div>
-      <div class="proj-platform">iOS · Android · Agent App</div>
+      <div class="proj-platform">Android · Agent App</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">02</div>
       <span class="proj-industry ind-ecom">E-Commerce</span>
       <div class="proj-name">SOOKH Customer App</div>
       <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
       <div class="proj-links">
         <a class="proj-link" href="https://play.google.com/store/apps/details?id=com.sookh.customer" target="_blank">Play Store ↗</a>
       </div>
@@ -588,6 +598,7 @@ footer a:hover { color: var(--accent); }
       <span class="proj-industry ind-fin">Finance</span>
       <div class="proj-name">HSBC Bangladesh Calendar</div>
       <div class="proj-platform">iOS · Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span><span class="ptag ptag-ios">iOS</span></div>
       <div class="proj-links">
         <a class="proj-link" href="#" target="_blank">Play Store ↗</a>
         <a class="proj-link" href="#" target="_blank">App Store ↗</a>
@@ -598,6 +609,7 @@ footer a:hover { color: var(--accent); }
       <span class="proj-industry ind-auto">Automotive</span>
       <div class="proj-name">Uttara Motors Smart Service</div>
       <div class="proj-platform">iOS · Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-ios">iOS</span></div>
       <div class="proj-links">
         <a class="proj-link" href="#" target="_blank">Play Store ↗</a>
         <a class="proj-link" href="#" target="_blank">App Store ↗</a>
@@ -607,70 +619,105 @@ footer a:hover { color: var(--accent); }
       <div class="proj-index">05</div>
       <span class="proj-industry ind-fin">Fintech · eKYC</span>
       <div class="proj-name">UFL eKYC — United Finance</div>
-      <div class="proj-platform">iOS · Android</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">06</div>
       <span class="proj-industry ind-fin">Fintech · eKYC</span>
       <div class="proj-name">Alliance Finance eKYC</div>
-      <div class="proj-platform">Mobile</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">07</div>
       <span class="proj-industry ind-fin">Fintech</span>
       <div class="proj-name">IDLC Finance App</div>
-      <div class="proj-platform">Mobile</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">08</div>
       <span class="proj-industry ind-ins">Insurance</span>
       <div class="proj-name">Guardian Life Insurance (GLIL)</div>
-      <div class="proj-platform">Mobile</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">09</div>
       <span class="proj-industry ind-fin">Fintech</span>
       <div class="proj-name">BRAC SME &amp; AI ERP</div>
       <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">10</div>
       <span class="proj-industry ind-tel">Telecom</span>
       <div class="proj-name">Red Cube (Robi / Airtel)</div>
-      <div class="proj-platform">Mobile</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
+      <div class="proj-links">
+        <a class="proj-link" href="https://play.google.com/store/apps/details?id=com.robi.redcube" target="_blank">Play Store ↗</a>
+      </div>
     </div>
     <div class="proj-card">
       <div class="proj-index">11</div>
       <span class="proj-industry ind-gov">Government</span>
       <div class="proj-name">DNCC App — Dhaka North City Corp.</div>
       <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">12</div>
       <span class="proj-industry ind-iot">IoT</span>
       <div class="proj-name">Bio Alert App</div>
-      <div class="proj-platform">South African Client · Mobile</div>
+      <div class="proj-platform">South African Client</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">13</div>
-      <span class="proj-industry ind-fin">Fintech · Ongoing</span>
+      <span class="proj-industry ind-fin">Fintech</span>
       <div class="proj-name">Core Banking App</div>
-      <div class="proj-platform">iOS · Android</div>
+      <div class="proj-platform">Android · Ongoing</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">14</div>
       <span class="proj-industry ind-ecom">Enterprise</span>
       <div class="proj-name">Sheba TMS — Task Management</div>
       <div class="proj-platform">iOS · Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-ios">iOS</span></div>
       <div class="proj-links">
         <a class="proj-link" href="#" target="_blank">App Store ↗</a>
       </div>
     </div>
+    <div class="proj-card">
+      <div class="proj-index">24</div>
+      <span class="proj-industry ind-intl">Rewards · Canada</span>
+      <div class="proj-name">Instaward</div>
+      <div class="proj-platform">Canadian Client</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">25</div>
+      <span class="proj-industry ind-intl">Logistics · Canada</span>
+      <div class="proj-name">EasyPickup</div>
+      <div class="proj-platform">Canadian Client</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+    </div>
     <div class="proj-card large">
-      <div class="proj-index">15+</div>
+      <div class="proj-index">26</div>
+      <span class="proj-industry ind-gov">Government · eKYC</span>
+      <div class="proj-name">EC eKYC — Bangladesh Election Commission</div>
+      <div class="proj-platform">National Digital Identity</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+    </div>
+    <div class="proj-card large">
+      <div class="proj-index">+</div>
       <span class="proj-industry ind-ecom">Various</span>
-      <div class="proj-name">SRMS · vTracker · Sheba App Store · Café Management · School Management · GPQ · SRMS Relief &amp; more</div>
-      <div class="proj-platform">Android · iOS</div>
+      <div class="proj-name">SRMS · vTracker · Sheba App Store · Café Management · School Management · GPQ &amp; more</div>
+      <div class="proj-platform">Android · Flutter</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
   </div>
 </section>
@@ -717,7 +764,7 @@ footer a:hover { color: var(--accent); }
     <div class="section-eyebrow">Contact</div>
     <h2 class="section-title">Let's work together</h2>
     <p>Whether you need a senior mobile developer for a long-term role, a complex app build, or technical leadership — I'd love to hear from you.</p>
-    <a class="contact-email-link" href="mailto:rokibulhasancse@gmail.com">rokibulhasancse@gmail.com</a>
+    <a class="contact-email-link" href="/cdn-cgi/l/email-protection#aad8c5c1c3c8dfc6c2cbd9cbc4c9d9cfeacdc7cbc3c684c9c5c7"><span class="__cf_email__" data-cfemail="196b7672707b6c7571786a78777a6a7c597e74787075377a7674">[email&#160;protected]</span></a>
     <div class="contact-divider"></div>
     <div class="social-row">
       <a class="social-btn" href="tel:+8801767584621">
@@ -732,7 +779,7 @@ footer a:hover { color: var(--accent); }
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
         GitHub
       </a>
-      <a class="social-btn" href="mailto:rokibulhasancse@gmail.com">
+      <a class="social-btn" href="/cdn-cgi/l/email-protection#6c1e0307050e1900040d1f0d020f1f092c0b010d0500420f0301">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         Email
       </a>
@@ -743,21 +790,9 @@ footer a:hover { color: var(--accent); }
 <!-- FOOTER -->
 <footer>
   <p>© 2025 Rokibul Hasan. All rights reserved.</p>
-  <p>Dhaka, Bangladesh &nbsp;·&nbsp; <a href="mailto:rokibulhasancse@gmail.com">rokibulhasancse@gmail.com</a></p>
+  <p>Dhaka, Bangladesh &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection#9ae8f5f1f3f8eff6f2fbe9fbf4f9e9ffdafdf7fbf3f6b4f9f5f7"><span class="__cf_email__" data-cfemail="23514c484a41564f4b4250424d40504663444e424a4f0d404c4e">[email&#160;protected]</span></a></p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const nav = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('sticky', window.scrollY > 20);
-  });
-  const revealEls = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
-    });
-  }, { threshold: 0.08 });
-  revealEls.forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+  window
