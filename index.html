@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rokibul Hasan — Senior Mobile App Developer</title>
-<meta name="description" content="Senior Mobile App Developer with 8+ years delivering Flutter and native Android & iOS applications for fintech, government, and enterprise clients. Based in Dhaka, Bangladesh.">
+<title>Rokibul Hasan — Senior Mobile Engineer &amp; Flutter Architect</title>
+<meta name="description" content="Senior Mobile Engineer &amp; Flutter Architect with 8+ years delivering Flutter and native Android & iOS applications for government, fintech, and enterprise clients. Architected the Flutter e-KYC SDK for Bangladesh Election Commission's Postal Vote BD app. Based in Dhaka, Bangladesh.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -153,6 +153,22 @@ nav.sticky {
 .btn-primary:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(99,179,237,0.4); }
 .btn-outline { border: 1px solid var(--border); color: var(--text-2); background: transparent; }
 .btn-outline:hover { border-color: var(--border-h); color: var(--accent); background: rgba(99,179,237,0.04); }
+.btn-gold { border: 1px solid rgba(212,168,83,0.4); color: var(--gold); background: rgba(212,168,83,0.06); }
+.btn-gold:hover { border-color: var(--gold); background: rgba(212,168,83,0.12); color: var(--gold); transform: translateY(-2px); }
+.nav-links .nav-cv {
+  margin-left: 0.5rem; padding: 0.5rem 1.1rem;
+  border: 1px solid rgba(212,168,83,0.35); color: var(--gold);
+  border-radius: 8px; font-weight: 600; font-size: 0.8rem;
+  transition: all 0.2s;
+}
+.nav-links .nav-cv:hover { background: rgba(212,168,83,0.1); border-color: var(--gold); }
+.flagship-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border-radius: 100px; margin-bottom: 0.75rem;
+  background: rgba(212,168,83,0.1); border: 1px solid rgba(212,168,83,0.3);
+  font-family: 'JetBrains Mono', monospace; font-size: 0.6rem;
+  color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase;
+}
 
 /* Hero card */
 .hero-right { position: relative; z-index: 1; animation: fadeIn 1s 0.3s ease both; }
@@ -388,6 +404,7 @@ footer a:hover { color: var(--accent); }
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#education">Education</a>
+    <a href="Rokibul_Hasan_CV.pdf" class="nav-cv" download>Download CV</a>
     <a href="#contact" class="nav-cta">Hire Me</a>
   </div>
 </nav>
@@ -401,10 +418,10 @@ footer a:hover { color: var(--accent); }
     </div>
     <h1 class="hero-heading">
       Senior Mobile<br>
-      <span class="accent-word">App</span> <span class="outline-word">Developer</span>
+      <span class="accent-word">Engineer</span> <span class="outline-word">&amp; Architect</span>
     </h1>
     <p class="hero-sub">
-      8+ years delivering high-impact <strong style="color:var(--text)">Flutter</strong> and <strong style="color:var(--text)">native Android &amp; iOS</strong> applications for fintech, government, insurance, and enterprise clients across Bangladesh and beyond.
+      8+ years architecting high-impact <strong style="color:var(--text)">Flutter</strong> and <strong style="color:var(--text)">native Android &amp; iOS</strong> applications for government, fintech, and enterprise clients. Architected the Flutter‑based <strong style="color:var(--text)">e‑KYC SDK</strong> for the Bangladesh Election Commission's <strong style="color:var(--text)">Postal Vote BD</strong> app.
     </p>
     <div class="hero-metrics">
       <div>
@@ -412,7 +429,7 @@ footer a:hover { color: var(--accent); }
         <div class="metric-lbl">Years Exp.</div>
       </div>
       <div>
-        <div class="metric-val">27<sup>+</sup></div>
+        <div class="metric-val">25<sup>+</sup></div>
         <div class="metric-lbl">Apps Shipped</div>
       </div>
       <div>
@@ -422,6 +439,7 @@ footer a:hover { color: var(--accent); }
     </div>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="Rokibul_Hasan_CV.pdf" class="btn btn-gold" download>↓ Download CV</a>
       <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
   </div>
@@ -439,6 +457,14 @@ footer a:hover { color: var(--accent); }
           <div class="exp-meta">PRIMARY</div>
         </li>
         <li>
+          <div class="exp-icon" style="background:rgba(212,168,83,0.12);">🛂</div>
+          <div>
+            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">e-KYC &amp; Digital Identity</div>
+            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">NID · OCR · Liveness · Biometrics</div>
+          </div>
+          <div class="exp-meta">FLAGSHIP</div>
+        </li>
+        <li>
           <div class="exp-icon" style="background:rgba(72,187,120,0.12);">🤖</div>
           <div>
             <div style="font-weight:600;color:var(--text);font-size:0.9rem;">Native Android</div>
@@ -450,17 +476,17 @@ footer a:hover { color: var(--accent); }
           <div class="exp-icon" style="background:rgba(99,179,237,0.1);">🍎</div>
           <div>
             <div style="font-weight:600;color:var(--text);font-size:0.9rem;">Native iOS</div>
-            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Swift · UIKit · SwiftUI · Core Data</div>
+            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Swift · UIKit · SwiftUI</div>
           </div>
-          <div class="exp-meta">1 PROJECT</div>
+          <div class="exp-meta">SUPPORTING</div>
         </li>
         <li>
-          <div class="exp-icon" style="background:rgba(212,168,83,0.08);">🏗️</div>
+          <div class="exp-icon" style="background:rgba(159,122,234,0.1);">🏗️</div>
           <div>
-            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">App Architecture</div>
-            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">MVVM · Clean Arch · SOLID</div>
+            <div style="font-weight:600;color:var(--text);font-size:0.9rem;">Architecture &amp; Mentoring</div>
+            <div style="font-size:0.78rem;margin-top:2px;color:var(--text-2);">Clean Arch · MVVM · Code Review</div>
           </div>
-          <div class="exp-meta">6 YRS</div>
+          <div class="exp-meta">8 YRS</div>
         </li>
       </ul>
       <div class="tech-row">
@@ -472,6 +498,7 @@ footer a:hover { color: var(--accent); }
         <span class="tech-pill">Kotlin</span>
         <span class="tech-pill">Java</span>
         <span class="tech-pill">Swift</span>
+        <span class="tech-pill">e-KYC</span>
       </div>
     </div>
   </div>
@@ -482,12 +509,12 @@ footer a:hover { color: var(--accent); }
 <!-- ABOUT -->
 <section id="about" class="section">
   <div class="section-eyebrow">About</div>
-  <h2 class="section-title">Flutter &amp; Android first,<br>always mobile-native</h2>
+  <h2 class="section-title">Flutter architecture &amp;<br>digital identity, at national scale</h2>
   <div class="about-grid reveal">
     <div class="about-body">
-      <p>I'm a <strong>Senior Mobile App Developer</strong> based in Dhaka, Bangladesh, specialising in <strong>Flutter</strong> and <strong>Native Android</strong> with over <strong>8 years of professional experience</strong>. I currently lead mobile engineering at Sheba Technologies Limited across multiple high-stakes projects.</p>
-      <p>For Flutter, I'm proficient with all three major state management solutions — <strong>GetX, BLoC,</strong> and <strong>Riverpod</strong> — and choose the right one based on project scale and team needs. On the Android side, I work natively in both <strong>Kotlin and Java</strong>. I've also delivered one <strong>native iOS project</strong> using Swift, UIKit, and SwiftUI.</p>
-      <p>Beyond standard app work, I've built eKYC flows, MQTT IoT apps, Core Banking modules, and hardware integrations — for clients in Bangladesh, South Africa, and Canada.</p>
+      <p>I'm a <strong>Senior Mobile Engineer &amp; Flutter Architect</strong> based in Dhaka, Bangladesh, with over <strong>8 years of professional experience</strong> designing and delivering high-performance <strong>Flutter</strong> and <strong>native Android</strong> applications across government, fintech, telecom, and enterprise sectors. I currently lead mobile engineering at Sheba Technologies Limited.</p>
+      <p>My proudest work is architecting the <strong>Flutter-based e-KYC SDK</strong> for the Bangladesh Election Commission's <strong>Postal Vote BD</strong> application — combining OCR, NID verification, liveness detection, and biometric authentication — and personally training Election Commission officials on the deployed system.</p>
+      <p>For Flutter, I'm proficient with all three major state management solutions — <strong>GetX, BLoC,</strong> and <strong>Riverpod</strong> — choosing the right one based on project scale. On Android I work natively in <strong>Kotlin and Java</strong>, and I've delivered a <strong>native iOS project</strong> using Swift. I've shipped 25+ production apps for clients in Bangladesh, South Africa, and Canada, and mentor junior engineers on Clean Architecture and engineering standards.</p>
     </div>
     <div class="skills-panel">
       <div class="skill-cat">
@@ -507,18 +534,30 @@ footer a:hover { color: var(--accent); }
         </div>
       </div>
       <div class="skill-cat">
-        <div class="skill-cat-title">🍎 Native iOS <span style="font-size:0.6rem;opacity:0.5;font-weight:400;">(1 project)</span></div>
+        <div class="skill-cat-title">🍎 Native iOS</div>
         <div class="skill-chips">
           <span class="chip">Swift</span><span class="chip">UIKit</span>
-          <span class="chip">SwiftUI</span><span class="chip">Core Data</span>
+          <span class="chip">SwiftUI</span>
         </div>
       </div>
       <div class="skill-cat">
-        <div class="skill-cat-title">⚙️ Architecture &amp; Integrations</div>
+        <div class="skill-cat-title">🛂 Security &amp; Digital Identity</div>
         <div class="skill-chips">
-          <span class="chip hi">MVVM</span><span class="chip">SOLID</span>
-          <span class="chip">MQTT</span><span class="chip">eKYC</span>
-          <span class="chip">BT Printer</span><span class="chip">Fingerprint</span>
+          <span class="chip hi">e-KYC Workflows</span><span class="chip hi">NID Verification</span>
+          <span class="chip hi">OCR</span><span class="chip">ML Kit</span>
+          <span class="chip">Face Matching</span><span class="chip">Liveness Detection</span>
+          <span class="chip">Biometric Auth</span><span class="chip">Secure Storage</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <div class="skill-cat-title">⚙️ Architecture, Backend &amp; DevOps</div>
+        <div class="skill-chips">
+          <span class="chip hi">Clean Architecture</span><span class="chip">MVVM/MVC</span>
+          <span class="chip">DI (Hilt/Dagger)</span><span class="chip">REST APIs</span>
+          <span class="chip">Firebase</span><span class="chip">SQLite/Room/Hive</span>
+          <span class="chip">MySQL</span><span class="chip">WorkManager</span>
+          <span class="chip">Git &amp; CI/CD</span><span class="chip">Fastlane</span>
+          <span class="chip">JUnit/Espresso/Mockito</span>
         </div>
       </div>
     </div>
@@ -531,37 +570,37 @@ footer a:hover { color: var(--accent); }
 <section id="experience" class="section">
   <div class="section-eyebrow">Experience</div>
   <h2 class="section-title">Career timeline</h2>
-  <p class="section-desc">Over 8 years of progressive growth from intern to senior engineer, delivering mobile solutions across fintech, government, and enterprise sectors.</p>
+  <p class="section-desc">Over 8 years of progressive growth from intern to senior engineer, delivering mobile solutions across government, fintech, telecom, and enterprise sectors.</p>
   <div class="exp-grid reveal">
-    <div class="exp-card featured">
+    <div class="exp-card featured" style="grid-column: span 2;">
       <div class="exp-date">Nov 2021 — Present <span class="exp-current">Current</span></div>
-      <div class="exp-role">Software Engineer</div>
+      <div class="exp-role">Senior Software Engineer</div>
       <div class="exp-company">Sheba Technologies Limited</div>
-      <p class="exp-desc">Leading Flutter and Native Android development for government, fintech, and enterprise clients. Architecting apps with Clean Architecture &amp; MVVM, conducting code reviews, and mentoring developers across multiple concurrent projects.</p>
-    </div>
-    <div class="exp-card">
-      <div class="exp-date">Oct 2018 — May 2021</div>
-      <div class="exp-role">Junior Software Developer</div>
-      <div class="exp-company">Sheba Technologies Limited</div>
-      <p class="exp-desc">Built and maintained Native Android and Flutter applications including vTracker, Relief Management systems, and the Sheba App Store platform using Kotlin and Dart.</p>
+      <p class="exp-desc">Solely designed, developed, and delivered the Flutter-based e-KYC SDK for the Postal Vote BD application (Bangladesh Election Commission) — NID verification, OCR, liveness detection, selfie capture, face matching, and secure API integration. Developed and maintained cross-platform Flutter apps (BRAC AI ERP, HSBC Dynamic &amp; Static Calendar) and native Android apps (BioAlert South Africa, United Finance eKYC, Alliance Finance eKYC). Served as technical presenter and trainer for the Postal Vote BD system, conducting hands-on training for Election Commission officials. Designed offline-first workflows, biometric verification, and secure local storage; mentored junior developers and contributed to architecture decisions.</p>
     </div>
     <div class="exp-card">
       <div class="exp-date">Jul 2021 — Nov 2021</div>
       <div class="exp-role">Software Developer</div>
       <div class="exp-company">SQ Group</div>
-      <p class="exp-desc">Delivered Native Android application features using Kotlin, focusing on UI implementation, performance optimisation, and cross-team collaboration.</p>
+      <p class="exp-desc">Developed and published the Q Cafe Management Flutter application for Android and iOS — a complete cross-platform solution for restaurant operations. Enhanced native Android apps (GPQ Hourly Audit, Security Guard Management System) with new features, stability improvements, and REST API integration.</p>
     </div>
     <div class="exp-card">
       <div class="exp-date">Apr 2021 — Jul 2021</div>
-      <div class="exp-role">Mobile App Developer (Contract)</div>
-      <div class="exp-company">Sookh.com</div>
-      <p class="exp-desc">Contract Flutter/Android developer for the SOOKH e-commerce app on Google Play Store. Delivered features and performance improvements.</p>
+      <div class="exp-role">Android App Developer (Contract)</div>
+      <div class="exp-company">Sookh</div>
+      <p class="exp-desc">Developed the Sookh eCommerce mobile application using Flutter — product browsing, cart, checkout, authentication, and order management. Integrated RESTful APIs, payment workflows, and push notifications for a seamless shopping experience.</p>
+    </div>
+    <div class="exp-card">
+      <div class="exp-date">Oct 2018 — May 2021</div>
+      <div class="exp-role">Junior Android Developer</div>
+      <div class="exp-company">Sheba Technologies Limited</div>
+      <p class="exp-desc">Developed and maintained native Android applications for enterprise and telecom clients, including Robi RedCube, Sheba Relief Management System, IDLC Finance, and Uttara Motors Smart Service. Implemented features, integrated RESTful APIs, and optimized performance.</p>
     </div>
     <div class="exp-card">
       <div class="exp-date">Jun 2018 — Sep 2018</div>
-      <div class="exp-role">Mobile Development Intern</div>
-      <div class="exp-company">Sheba Technology Limited</div>
-      <p class="exp-desc">Began professional career with hands-on Native Android development using Java, establishing the foundation for 8+ years of mobile engineering growth.</p>
+      <div class="exp-role">Intern, Mobile Application Development</div>
+      <div class="exp-company">Sheba Technologies Limited</div>
+      <p class="exp-desc">Developed Sheba App Store applications using Flutter, and maintained the Uttara Motors Smart Service and vTracker applications built with Ionic — the starting point of an 8+ year mobile engineering career.</p>
     </div>
   </div>
 </section>
@@ -573,87 +612,99 @@ footer a:hover { color: var(--accent); }
   <div>
     <div class="section-eyebrow">Projects</div>
     <h2 class="section-title">Selected work</h2>
-    <p class="section-desc" style="margin-bottom:0;">27+ production apps. Primarily built with <strong style="color:var(--text)">Flutter</strong> &amp; <strong style="color:var(--text)">Native Android (Kotlin/Java)</strong> — spanning fintech, government, insurance, HR, automotive, and international clients.</p>
+    <p class="section-desc" style="margin-bottom:0;">25+ production apps. Primarily built with <strong style="color:var(--text)">Flutter</strong> &amp; <strong style="color:var(--text)">Native Android (Kotlin/Java)</strong> — spanning government, fintech, telecom, insurance, HR, and international clients.</p>
   </div>
   <div class="projects-grid" style="margin-top:3rem;">
-    <div class="proj-card large">
+    <div class="proj-card large" style="border-color:rgba(212,168,83,0.3); background: rgba(212,168,83,0.03);">
       <div class="proj-index">01</div>
-      <span class="proj-industry ind-gov">Government</span>
-      <div class="proj-name">Sheikh Russel Digital Lab (SRDL)</div>
-      <div class="proj-platform">Android · Agent App</div>
-      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+      <span class="flagship-badge">★ Flagship Project</span><br>
+      <span class="proj-industry ind-gov">Government · Digital Identity</span>
+      <div class="proj-name">Postal Vote BD — e-KYC SDK</div>
+      <div class="proj-platform">Bangladesh Election Commission · iOS &amp; Android</div>
+      <p style="font-size:0.82rem;color:var(--text-2);margin-top:0.6rem;line-height:1.6;">Solely architected the Flutter-based e-KYC SDK powering NID verification, OCR, liveness detection, selfie capture, and face matching for national postal voting. Also led technical training for Election Commission officials.</p>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span><span class="ptag ptag-ios">iOS</span></div>
+      <div class="proj-links">
+        <a class="proj-link" href="https://play.google.com/store/apps/details?id=bd.gov.ocv.postalvoting&hl=bn" target="_blank">Play Store ↗</a>
+        <a class="proj-link" href="https://apps.apple.com/us/app/postal-vote-bd/id6752640139" target="_blank">App Store ↗</a>
+      </div>
     </div>
     <div class="proj-card">
       <div class="proj-index">02</div>
-      <span class="proj-industry ind-ecom">E-Commerce</span>
-      <div class="proj-name">SOOKH Customer App</div>
+      <span class="proj-industry ind-fin">Fintech · eKYC</span>
+      <div class="proj-name">United Finance — e-KYC</div>
       <div class="proj-platform">Android</div>
       <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
-      <div class="proj-links">
-        <a class="proj-link" href="https://play.google.com/store/apps/details?id=com.sookh.customer" target="_blank">Play Store ↗</a>
-      </div>
     </div>
     <div class="proj-card">
       <div class="proj-index">03</div>
-      <span class="proj-industry ind-fin">Finance</span>
-      <div class="proj-name">HSBC Bangladesh Calendar</div>
-      <div class="proj-platform">iOS · Android</div>
-      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span><span class="ptag ptag-ios">iOS</span></div>
-      <div class="proj-links">
-        <a class="proj-link" href="#" target="_blank">Play Store ↗</a>
-        <a class="proj-link" href="#" target="_blank">App Store ↗</a>
-      </div>
+      <span class="proj-industry ind-fin">Fintech · eKYC</span>
+      <div class="proj-name">Alliance Finance — e-KYC</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">04</div>
-      <span class="proj-industry ind-auto">Automotive</span>
-      <div class="proj-name">Uttara Motors Smart Service</div>
+      <span class="proj-industry ind-fin">Banking &amp; Finance</span>
+      <div class="proj-name">HSBC Dynamic &amp; Static Calendar</div>
       <div class="proj-platform">iOS · Android</div>
-      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-ios">iOS</span></div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span><span class="ptag ptag-ios">iOS</span></div>
       <div class="proj-links">
-        <a class="proj-link" href="#" target="_blank">Play Store ↗</a>
-        <a class="proj-link" href="#" target="_blank">App Store ↗</a>
+        <a class="proj-link" href="https://play.google.com/store/apps/details?id=bd.com.hsbc.hsbcbangladeshcalendar&hl=en" target="_blank">Play Store ↗</a>
+        <a class="proj-link" href="https://apps.apple.com/us/app/hsbc-bangladesh-my-calendar/id1572667670" target="_blank">App Store ↗</a>
       </div>
     </div>
     <div class="proj-card">
       <div class="proj-index">05</div>
-      <span class="proj-industry ind-fin">Fintech · eKYC</span>
-      <div class="proj-name">UFL eKYC — United Finance</div>
-      <div class="proj-platform">Android</div>
-      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
+      <span class="proj-industry ind-fin">Banking &amp; ERP</span>
+      <div class="proj-name">BRAC AI ERP</div>
+      <div class="proj-platform">Android · Flutter</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">06</div>
-      <span class="proj-industry ind-fin">Fintech · eKYC</span>
-      <div class="proj-name">Alliance Finance eKYC</div>
+      <span class="proj-industry ind-fin">Fintech</span>
+      <div class="proj-name">IDLC Finance App</div>
       <div class="proj-platform">Android</div>
       <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">07</div>
-      <span class="proj-industry ind-fin">Fintech</span>
-      <div class="proj-name">IDLC Finance App</div>
-      <div class="proj-platform">Android</div>
-      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+      <span class="proj-industry ind-ecom">Enterprise &amp; Operations</span>
+      <div class="proj-name">Q Cafe Management System</div>
+      <div class="proj-platform">iOS · Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span><span class="ptag ptag-ios">iOS</span></div>
+      <div class="proj-links">
+        <a class="proj-link" href="https://play.google.com/store/apps/details?id=com.sqgc.qcafeuser&hl=en" target="_blank">Play Store ↗</a>
+      </div>
     </div>
     <div class="proj-card">
       <div class="proj-index">08</div>
-      <span class="proj-industry ind-ins">Insurance</span>
-      <div class="proj-name">Guardian Life Insurance (GLIL)</div>
+      <span class="proj-industry ind-ecom">Enterprise</span>
+      <div class="proj-name">GPQ Hourly Audit</div>
       <div class="proj-platform">Android</div>
-      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">09</div>
-      <span class="proj-industry ind-fin">Fintech</span>
-      <div class="proj-name">BRAC SME &amp; AI ERP</div>
+      <span class="proj-industry ind-ecom">Enterprise</span>
+      <div class="proj-name">Security Guard Management System</div>
       <div class="proj-platform">Android</div>
       <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
       <div class="proj-index">10</div>
+      <span class="proj-industry ind-ecom">Retail &amp; eCommerce</span>
+      <div class="proj-name">Sookh eCommerce</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+      <div class="proj-links">
+        <a class="proj-link" href="https://play.google.com/store/apps/details?id=com.sookh.customer" target="_blank">Play Store ↗</a>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">11</div>
       <span class="proj-industry ind-tel">Telecom</span>
-      <div class="proj-name">Red Cube (Robi / Airtel)</div>
+      <div class="proj-name">Robi RedCube</div>
       <div class="proj-platform">Android</div>
       <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
       <div class="proj-links">
@@ -661,40 +712,89 @@ footer a:hover { color: var(--accent); }
       </div>
     </div>
     <div class="proj-card">
-      <div class="proj-index">11</div>
+      <div class="proj-index">12</div>
+      <span class="proj-industry ind-auto">Field Services</span>
+      <div class="proj-name">Uttara Motors Smart Service</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">13</div>
+      <span class="proj-industry ind-tel">Telecom &amp; Field Services</span>
+      <div class="proj-name">Sheba Relief Management System</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">14</div>
+      <span class="proj-industry ind-tel">Field Services</span>
+      <div class="proj-name">vTracker</div>
+      <div class="proj-platform">Ionic</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Ionic</span></div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">15</div>
+      <span class="proj-industry ind-intl">International · South Africa</span>
+      <div class="proj-name">BioAlert</div>
+      <div class="proj-platform">South African Client</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">16</div>
+      <span class="proj-industry ind-gov">Government</span>
+      <div class="proj-name">Sheikh Russel Digital Lab (SRDL &amp; SRDL Agent)</div>
+      <div class="proj-platform">Android · Agent App</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">17</div>
       <span class="proj-industry ind-gov">Government</span>
       <div class="proj-name">DNCC App — Dhaka North City Corp.</div>
       <div class="proj-platform">Android</div>
       <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
-      <div class="proj-index">12</div>
-      <span class="proj-industry ind-iot">IoT</span>
-      <div class="proj-name">Bio Alert App</div>
-      <div class="proj-platform">South African Client</div>
+      <div class="proj-index">18</div>
+      <span class="proj-industry ind-ins">Insurance</span>
+      <div class="proj-name">Glil — Guardian Life Insurance</div>
+      <div class="proj-platform">Android</div>
       <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
-      <div class="proj-index">13</div>
+      <div class="proj-index">19</div>
+      <span class="proj-industry ind-ecom">Enterprise · Biometrics</span>
+      <div class="proj-name">Face Attendance System</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">20</div>
+      <span class="proj-industry ind-ecom">Enterprise · Task Mgmt</span>
+      <div class="proj-name">Sheba TMS — Task &amp; School/Learning Management</div>
+      <div class="proj-platform">iOS · Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-ios">iOS</span></div>
+      <div class="proj-links">
+        <a class="proj-link" href="https://apps.apple.com/us/app/sheba-tms/id6736880341" target="_blank">App Store ↗</a>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">21</div>
+      <span class="proj-industry ind-fin">Fintech</span>
+      <div class="proj-name">BRAC SME</div>
+      <div class="proj-platform">Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-index">22</div>
       <span class="proj-industry ind-fin">Fintech · Ongoing</span>
       <div class="proj-name">Core Banking App</div>
       <div class="proj-platform">Android</div>
       <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
     <div class="proj-card">
-      <div class="proj-index">14</div>
-      <span class="proj-industry ind-ecom">Enterprise</span>
-      <div class="proj-name">Sheba TMS — Task Management</div>
-      <div class="proj-platform">iOS · Android</div>
-      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-ios">iOS</span></div>
-      <div class="proj-links">
-        <a class="proj-link" href="#" target="_blank">App Store ↗</a>
-      </div>
-    </div>
-    <div class="proj-card">
-      <div class="proj-index">15</div>
+      <div class="proj-index">23</div>
       <span class="proj-industry ind-ecom">HR &amp; Enterprise</span>
-      <div class="proj-name">HRMS — HR Management System</div>
+      <div class="proj-name">Sheba HRMS</div>
       <div class="proj-platform">Android · Flutter</div>
       <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
@@ -712,24 +812,15 @@ footer a:hover { color: var(--accent); }
       <div class="proj-platform">Canadian Client</div>
       <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
     </div>
-    <div class="proj-card large">
-      <div class="proj-index">26</div>
-      <span class="proj-industry ind-gov">Government · eKYC</span>
-      <div class="proj-name">EC eKYC — Bangladesh Election Commission</div>
-      <div class="proj-platform">National Digital Identity</div>
-      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
-    </div>
-    <div class="proj-card large">
+    <div class="proj-card">
       <div class="proj-index">+</div>
-      <span class="proj-industry ind-ecom">Various</span>
-      <div class="proj-name">SRMS · vTracker · Sheba App Store · Café Management · School Management · GPQ &amp; more</div>
-      <div class="proj-platform">Android · Flutter</div>
-      <div class="proj-tech-row"><span class="ptag ptag-flutter">Flutter</span><span class="ptag ptag-android">Android</span></div>
+      <span class="proj-industry ind-ecom">In-House</span>
+      <div class="proj-name">Sheba App Store apps</div>
+      <div class="proj-platform">Native Android</div>
+      <div class="proj-tech-row"><span class="ptag ptag-android">Android</span></div>
     </div>
   </div>
 </section>
-
-<hr class="section-divider">
 
 <!-- EDUCATION -->
 <section id="education" class="section">
@@ -740,7 +831,7 @@ footer a:hover { color: var(--accent); }
       <div class="edu-type">Postgraduate</div>
       <div class="edu-degree">M.Sc. Computer Science &amp; Engineering</div>
       <div class="edu-school">Stamford University Bangladesh</div>
-      <div class="edu-detail">CGPA 3.70 (approx) · 2025 · Thesis in progress</div>
+      <div class="edu-detail">CGPA 3.70 · Thesis in progress</div>
     </div>
     <div class="edu-card">
       <div class="edu-type">Undergraduate</div>
@@ -750,15 +841,15 @@ footer a:hover { color: var(--accent); }
     </div>
     <div class="edu-card">
       <div class="edu-type">Professional Training</div>
-      <div class="edu-degree">Mobile Application Development</div>
-      <div class="edu-school">BITM</div>
-      <div class="edu-detail">Dec 2016 — Feb 2017</div>
+      <div class="edu-degree">Android Application Development (Trainee)</div>
+      <div class="edu-school">BITM — BASIS Institute of Technology &amp; Management</div>
+      <div class="edu-detail">Nov 2016 — Feb 2017</div>
     </div>
     <div class="edu-card">
       <div class="edu-type">Professional Training</div>
-      <div class="edu-degree">Mobile Application Development</div>
-      <div class="edu-school">LICT — Bangladesh</div>
-      <div class="edu-detail">Nov 2017 — Apr 2018</div>
+      <div class="edu-degree">Android Application Development (Trainee)</div>
+      <div class="edu-school">LICT Project, ICT Division, Government of Bangladesh</div>
+      <div class="edu-detail">Oct 2017 — Mar 2018</div>
     </div>
   </div>
 </section>
@@ -770,25 +861,25 @@ footer a:hover { color: var(--accent); }
   <div class="contact-inner reveal">
     <div class="section-eyebrow">Contact</div>
     <h2 class="section-title">Let's work together</h2>
-    <p>Whether you need a senior mobile developer for a long-term role, a complex app build, or technical leadership — I'd love to hear from you.</p>
-    <a class="contact-email-link" href="/cdn-cgi/l/email-protection#aad8c5c1c3c8dfc6c2cbd9cbc4c9d9cfeacdc7cbc3c684c9c5c7"><span class="__cf_email__" data-cfemail="196b7672707b6c7571786a78777a6a7c597e74787075377a7674">[email&#160;protected]</span></a>
+    <p>Whether you need a senior mobile engineer for a long-term role, a complex Flutter architecture build, or technical leadership — I'd love to hear from you.</p>
+    <a class="contact-email-link" href="mailto:rokibulhasancse@gmail.com">rokibulhasancse@gmail.com</a>
     <div class="contact-divider"></div>
     <div class="social-row">
       <a class="social-btn" href="tel:+8801767584621">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         +880 1767 584 621
       </a>
-      <a class="social-btn" href="https://linkedin.com" target="_blank">
+      <a class="social-btn" href="https://linkedin.com/in/rhrazib" target="_blank">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
-      <a class="social-btn" href="https://github.com" target="_blank">
+      <a class="social-btn" href="https://github.com/rhrazib" target="_blank">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
         GitHub
       </a>
-      <a class="social-btn" href="/cdn-cgi/l/email-protection#6c1e0307050e1900040d1f0d020f1f092c0b010d0500420f0301">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Email
+      <a class="social-btn" href="Rokibul_Hasan_CV.pdf" download>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
       </a>
     </div>
   </div>
@@ -796,11 +887,11 @@ footer a:hover { color: var(--accent); }
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 Rokibul Hasan. All rights reserved.</p>
-  <p>Dhaka, Bangladesh &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection#9ae8f5f1f3f8eff6f2fbe9fbf4f9e9ffdafdf7fbf3f6b4f9f5f7"><span class="__cf_email__" data-cfemail="23514c484a41564f4b4250424d40504663444e424a4f0d404c4e">[email&#160;protected]</span></a></p>
+  <p>© 2026 Rokibul Hasan. All rights reserved.</p>
+  <p>Mohakhali, Dhaka-1212, Bangladesh &nbsp;·&nbsp; <a href="mailto:rokibulhasancse@gmail.com">rokibulhasancse@gmail.com</a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   const nav = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('sticky', window.scrollY > 20);
